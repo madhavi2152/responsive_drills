@@ -1,0 +1,65 @@
+body {
+  height: 39em;
+}
+.container {
+  height: 100%;
+  width: auto;
+  /* overflow: hidden; */
+  background-color: blueviolet;
+}
+header {
+  height: 30px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+footer {
+  height: 30px;
+  background-color: #ccc;
+  margin-top: 10px;
+}
+.a {
+  height: 50%;
+  background-color: lightgreen;
+}
+.b {
+  height: 25%;
+  background-color: green;
+}
+.c {
+  height: 25%;
+  background-color: yellow;
+}
+
+@media all and (min-width: 700px) and (max-width: 1020px) {
+  .a {
+    height: 50%;
+    width: 100%;
+  }
+  .b,
+  .c {
+    height: 50%;
+    width: 50%;
+  }
+  .c {
+    float: right;
+    margin-top: -19.5em;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .container {
+    display: flex;
+  }
+  .a,
+  .b,
+  .c {
+    height: 100%;
+  }
+  .a,
+  .c {
+    width: 25%;
+  }
+  .b {
+    width: 50%;
+  }
+}

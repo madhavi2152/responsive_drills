@@ -1,0 +1,54 @@
+header {
+  height: 5em;
+  background-color: #ccc;
+  margin-bottom: 5px;
+}
+footer {
+  height: 5em;
+  background-color: #ccc;
+  margin-top: 5px;
+}
+
+.container {
+  width: 100%;
+  height: 39em;
+}
+.a {
+  height: 13em;
+  background-color: red;
+}
+.b {
+  height: 13em;
+  background-color: orange;
+}
+.c {
+  height: 13em;
+  background-color: yellow;
+}
+@media all and (min-width: 700px) and (max-width: 1020px) {
+  .a,
+  .b,
+  .c {
+    width: 50%;
+    height: 50%;
+  }
+  .c {
+    height: 100%;
+    float: right;
+    margin-top: -39em;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .c {
+    height: 100%;
+    width: 30%;
+    float: right;
+    margin-top: -39em;
+  }
+  .a,
+  .b {
+    height: 50%;
+    width: 70%;
+  }
+}
